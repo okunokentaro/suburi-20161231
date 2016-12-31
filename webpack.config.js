@@ -3,8 +3,11 @@ module.exports = {
     bundle: './index.js'
   },
   output: {
-    path: './public',
+    path: __dirname + '/public',
     filename: 'bundle.js'
+  },
+  devServer: {
+    contentBase: 'public',
   },
   module: {
     rules: [
